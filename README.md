@@ -20,12 +20,14 @@ If you want to install the dependencies on your own, you can simply comment out 
 
 Be aware that this installation has only been tested on Debian.  
 These are the dependency versions that were used for testing:  
+```
 zsh 5.8.1  
 tmux 3.3a  
 nvim 0.8.0  
 fzf 0.33.0  
 xsel 1.2.0  
 exa 0.10.1  
+```
 
 If you already have the dependencies installed, you can check the versions in case any errors occur:  
 ```
