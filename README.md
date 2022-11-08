@@ -1,5 +1,5 @@
 # DotFiles
-My lightweight dotfiles, which include zsh, tmux, and nvim.
+My lightweight dotfiles, which include zsh, tmux, and neovim.
 
 ## Dependencies
 The install script will attempt to guess your Linux distribution based on Ubuntu, Debian, Linuxmint, Kali, CentOS, RHEL, Fedora, and Rocky to install the dependencies.  
@@ -23,7 +23,7 @@ These are the dependency versions that were used for testing:
 ```
 zsh 5.8.1  
 tmux 3.3a  
-nvim 0.8.0  
+neovim 0.8.0  
 fzf 0.33.0  
 xsel 1.2.0  
 exa 0.10.1  
