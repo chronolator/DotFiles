@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# Update the zsh plugins
+alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
+
+# Colorize grep output (good for log files)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias ls='exa -ahg --color=always --group-directories-first'
+
+# Confirm before overwriting something and make it verbose
+alias cp="cp -iv"
+alias mv='mv -iv'
+alias rm='rm -iv'
+
+# Misc
+alias ds='tmux new-session -d -s Main "htop | lolcat; zsh -i"; tmux split-window -h "gotop; zsh -i"; tmux split-window -v "cava; zsh -i"; tmux select-pane -t 0; tmux split-window -v "neofetch; zsh -i"; tmux select-pane -t 3; tmux split-window -v -p 80 "cd ~/Music; cmus; zsh -i"; tmux split-window -v "zsh -i"; tmux new-window -n Coding "cd ~/Coding; zsh -i"; tmux split-window -v "cd ~/Coding; nvidia-smi; zsh -i"; tmux new-window -n CTFs ; tmux select-window -t 0; tmux attach -t Main'
