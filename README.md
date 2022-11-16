@@ -1,5 +1,6 @@
 # DotFiles
 My lightweight dotfiles, which include zsh, tmux, and neovim.
+![](https://github.com/chronolator/DotFiles/blob/master/images/lvim.png)  
 
 ## Dependencies
 The install script will attempt to guess your Linux distribution based on Ubuntu, Debian, Linuxmint, Kali, CentOS, RHEL, Fedora, and Rocky to install the dependencies.  
