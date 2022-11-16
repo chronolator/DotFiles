@@ -53,10 +53,10 @@ cd DotFiles
 
 Run script with the user that you want to install under:  
 ```
-./install.sh <USER>
+sudo ./install.sh <USER>
 ```  
 
-Run lvim and wait until all the LunarVim plugins are installed, which can be seen on the bottom status bar:  
+Run lvim as the user that it was installed under and wait until all the LunarVim plugins are installed, which can be seen on the bottom status bar:  
 ```
 lvim
 ```  
