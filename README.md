@@ -3,7 +3,7 @@ My lightweight dotfiles, which include zsh, tmux, and neovim.
 
 ## Dependencies
 The install script will attempt to guess your Linux distribution based on Ubuntu, Debian, Linuxmint, Kali, CentOS, RHEL, Fedora, and Rocky to install the dependencies.  
-If you want to install the dependencies on your own, you can simply comment out lines 30-40:  
+If you want to install the dependencies on your own, you can simply comment out lines 41-51:  
 ```
 #info 0 "Guessing OS distro and installing dependencies"
 #echo ""
@@ -18,7 +18,7 @@ If you want to install the dependencies on your own, you can simply comment out 
 #fi
 ```
 
-Be aware that this installation has only been tested on Debian.  
+Be aware that this installation has only been tested on Fedora.  
 These are the dependency versions that were used for testing:  
 ```
 zsh 5.8.1  
@@ -50,17 +50,17 @@ Enter the folder:
 cd DotFiles
 ```  
 
-Run part 1 of the bash script:  
+Run script with the user that you want to install under:  
 ```
-./install.sh 1
+./install.sh <USER>
 ```  
 
-Run nvim and wait until all the LunarVim plugins are installed, which can be seen on the bottom status bar:  
+Run lvim and wait until all the LunarVim plugins are installed, which can be seen on the bottom status bar:  
 ```
-nvim
-```
+lvim
+```  
 
-Run part 2 of the bash script:  
+Exit out of lvim and start a new zsh instance to finish:  
 ```
-./install.sh 2
+zsh
 ```  
