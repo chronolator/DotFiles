@@ -68,7 +68,8 @@ if id "$CUSER" &> /dev/null && [[ "$CID" -ne 0 ]]; then
     # https://github.com/LunarVim/Neovim-from-scratch
     #git clone https://github.com/LunarVim/Neovim-from-scratch.git $HOME_CONFIG/$NVIM
     info 0 "Installing LunarVim"
-    su $SUDO_USER -c "LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)"
+    #su $SUDO_USER -c "LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)"
+    su $SUDO_USER -c "LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)"
     ifcheck "installing LunarVim"
 
     # Set ownwership to the user
@@ -98,7 +99,8 @@ elif id "$CUSER" &> /dev/null && [[ "$CID" -eq 0 ]]; then
     # https://github.com/LunarVim/Neovim-from-scratch
     #git clone https://github.com/LunarVim/Neovim-from-scratch.git $HOME_CONFIG/$NVIM
     info 0 "Installing LunarVim"
-    LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+    #LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/master/utils/installer/install.sh)
+    LV_BRANCH='release-1.2/neovim-0.8' bash <(curl -s https://raw.githubusercontent.com/lunarvim/lunarvim/fc6873809934917b470bff1b072171879899a36b/utils/installer/install.sh)
     ifcheck "installing LunarVim"
 
     # Set ownwership to the user
